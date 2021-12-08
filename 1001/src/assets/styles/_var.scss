@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@function px2rem($px) {
+  @return math.div($px, 100) * 1rem;
+}
+
+$background-color: #f8f8f8;

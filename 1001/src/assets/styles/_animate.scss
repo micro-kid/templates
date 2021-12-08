@@ -1,0 +1,223 @@
+@import "_var.scss";
+// 循环淡入
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn2 {
+  -webkit-animation-name: fadeIn2;
+  animation-name: fadeIn2;
+  animation-iteration-count: infinite;
+}
+
+// 发光
+@keyframes flash2 {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
+
+.flash2 {
+  -webkit-animation-name: flash2;
+  animation-name: flash2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash3 {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0.8;
+  }
+}
+
+.flash3 {
+  -webkit-animation-name: flash3;
+  animation-name: flash3;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash4 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+.flash4 {
+  -webkit-animation-name: flash4;
+  animation-name: flash4;
+  animation-iteration-count: infinite;
+}
+// 打开
+@keyframes open1 {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 33deg);
+    transform: rotate3d(0, 0, 1, 33deg);
+    transform-origin: px2rem(181) px2rem(197);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    transform-origin: px2rem(181) px2rem(197);
+  }
+}
+
+.open1 {
+  -webkit-animation-name: open1;
+  animation-name: open1;
+}
+
+@keyframes open2 {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, -37deg);
+    transform: rotate3d(0, 0, 1, -37deg);
+    transform-origin: px2rem(36) px2rem(190);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    transform-origin: px2rem(36) px2rem(190);
+  }
+}
+
+.open2 {
+  -webkit-animation-name: open2;
+  animation-name: open2;
+}
+
+// 上下
+@keyframes upDown {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(px2rem(10));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.upDown {
+  -webkit-animation-name: upDown;
+  animation-name: upDown;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upDown2 {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(px2rem(5));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.upDown2 {
+  -webkit-animation-name: upDown2;
+  animation-name: upDown2;
+  animation-iteration-count: infinite;
+}
+
+// 滑入
+@keyframes slideInLeft2 {
+  from {
+    transform: translate3d(-200%, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft2 {
+  -webkit-animation-name: slideInLeft2;
+  animation-name: slideInLeft2;
+}
+
+// 右上进
+@keyframes slideInTopRight {
+  from {
+    transform: translate3d(50%, -50%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInTopRight {
+  -webkit-animation-name: slideInTopRight;
+  animation-name: slideInTopRight;
+}
+
+// 左进右出
+@keyframes slideInLeftOutRight {
+  from {
+    transform: translate3d(-120%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeftOutRight {
+  -webkit-animation-name: slideInLeftOutRight;
+  animation-name: slideInLeftOutRight;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+// 旋转
+
+@keyframes rotateAll {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.rotateAll {
+  -webkit-animation-name: rotateAll;
+  animation-name: rotateAll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
